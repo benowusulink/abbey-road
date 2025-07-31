@@ -1,0 +1,64 @@
+/* ABOUT-US MAIN */
+#about-us-main {
+  border: var(--third-color) solid 5px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+}
+
+/* ABOUT-US MAIN H1*/
+
+#about-us-main-h1 {
+  min-height: 13%;
+  width: 20%;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: var(--third-color);
+}
+
+/* ABOUT-US MAIN CONTENT 1*/
+
+.about-us-main-article {
+  width: 95%;
+  color: var(--third-color);
+  font-size: 20px;
+}
+
+.about-us-main-article-h2 {
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+  height: 5%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1%;
+  align-items: center;
+}
+#about-us-main-article-h2-1 {
+  width: 30%;
+}
+
+.about-us-main-article-p-a {
+  text-decoration: none;
+  color: var(--main-color);
+  background-color: var(--fourth-color);
+}
+.about-us-main-article-p-a:hover {
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+}
+
+/* ABOUT-US MAIN CONTENT 2*/
+
+#about-us-main-article-h2-2 {
+  width: 50%;
+}

@@ -1,0 +1,10 @@
+node_modules/
+docs/
+.git/
+package-lock.json
+package.json
+README.md
+utilities/
+.gitignore
+.DS_Store
+Thumbs.db

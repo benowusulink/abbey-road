@@ -1,0 +1,102 @@
+/* SERVICES MAIN */
+
+#services-main {
+  border: solid 5px var(--third-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  padding-bottom: 4%;
+}
+
+/* SERVICES MAIN h1 */
+
+#services-main-h1 {
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  width: 20%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: var(--third-color);
+}
+
+/* SERVICES MAIN ARTICLE */
+
+#services-main-article1 {
+  height: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.services-main-article1-h2 {
+  background-color: var(--third-color);
+  height: 10vh;
+  width: 45%;
+  color: var(--fourth-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1%;
+  font-size: 200%;
+}
+
+.services-main-article1-p {
+  height: auto;
+  width: 100%;
+  font-size: 120%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.services-main-article1-ul {
+  margin-top: 0%;
+  margin-bottom: 0;
+  font-size: 120%;
+  height: auto;
+  width: 100%;
+}
+
+#services-main-article1-ul6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.services-main-article1-ul-li-a {
+  text-decoration: none;
+}
+
+.services-main-article1-ul-li-a-p {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  font-size: 90%;
+  width: auto;
+}
+.services-main-article1-ul-li-a-p:hover {
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+}
+
+.services-main-article1-p-5-span {
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+}
+.services-main-article1-p-5-span:hover {
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+}

@@ -1,0 +1,31 @@
+{
+  "name": "abbey-road-client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve ./public/index.html -p 8080 --open",
+    "build": "rm -r docs && parcel build ./public/index.html --dist-dir docs --public-url ./",
+    "pretty": "npx prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benowusulink/abbey-road-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benowusulink/abbey-road-client/issues"
+  },
+  "homepage": "https://github.com/benowusulink/abbey-road-client",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "parcel": "^2.15.4",
+    "prettier": "3.6.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./"
+  }
+}
