@@ -77,6 +77,13 @@
   text-decoration: none;
 }
 
+#services-main-article1-p-5 {
+  border: solid var(--third-color) 2px;
+  padding: 2%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .services-main-article1-ul-li-a-p {
   white-space: nowrap;
   display: flex;

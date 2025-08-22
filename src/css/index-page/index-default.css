@@ -47,43 +47,55 @@ body {
   align-items: center;
   background-color: black;
   color: white;
+
 }
 
 #index-header-nav1-ul1 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
-  padding-left: 1%;
   height: 100%;
-  width: 65%;
+  min-width: 75%;
+  padding-left: 0.5%;
+ 
 }
 
 .index-header-nav1-ul1-li1 {
-  border-right: solid var(--third-color) 2px;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   height: 97%;
   color: white;
-  margin-left: 1%;
   width: auto;
   white-space: nowrap;
-  padding-right: 1%;
+  min-width: 13%;
+  font-size: 100%;
+
 }
 .index-header-nav1-ul1-li1:hover {
   color: var(--secondary-color);
-  border-right: solid var(--secondary-color) 2px;
+
 }
 .index-header-nav1-ul1-li1:first-child {
   border-right: none;
   color: var(--secondary-color);
+  min-width: 9%;
 }
 
-.index-header-nav1-ul1-li1:last-child:hover {
-  border-right: none;
+#index-header-nav1-ul1-li1{
+
+  min-width: 59%;
+
 }
+
+#index-header-nav1-ul1-li2{
+    width: 19%;
+
+}
+
 
 .index-header-nav1-ul1-li1-img {
   height: 20px;
@@ -94,33 +106,54 @@ body {
 .index-header-nav1-ul1-li1-a {
   text-decoration: none;
   color: inherit;
+
+}
+
+#index-header-nav1-ul1-li1-p1{
+
+  width: 100%;
+  font-size: 100%;
+  overflow-x: scroll;
+  padding-right: 1%;
 }
 
 /* NAV1 #SOCIAL MEDIA */
 #index-header-nav1-ul2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
   list-style: none;
   border-left: solid white 1px;
   height: 100%;
   width: auto;
-  padding-left: 1%;
-  width: 30%;
+  padding-left: 0.5%;
+  width: 25%;
+  
 }
 
 .index-header-nav1-ul1-li2 {
-  border-right: solid var(--third-color) 2px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 1%;
+  width: 10%;
+
 }
 .index-header-nav1-ul1-li2:first-child {
   border-right: none;
   color: var(--secondary-color);
+  width: 45%;
 }
+
+#index-header-nav1-ul1-li2-p1{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .index-header-nav1-ul1-li2:first-child:hover {
   border-right: none;
 }
@@ -193,7 +226,6 @@ body {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-
   list-style: none;
   margin-bottom: 0px;
   height: 100%;
@@ -210,8 +242,8 @@ body {
   color: var(--third-color);
   transition: 0.1s;
 }
-.index-header-div1-nav-ul-li:last-child {
-}
+
+
 .index-header-div1-nav-ul-li:hover {
   border: solid var(--fourth-color) 1px;
   background-color: var(--third-color);
@@ -225,9 +257,24 @@ body {
   transform: scale(1.05);
 }
 
+#index-header-div1-nav-ul-li-resident{
+  font-size: 90%;
+}
+.index-header-div1-nav-ul-li-resident{
+  border: solid var(--fourth-color) 1px;
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+  transform: scale(1.05);
+}
+
 .index-header-div1-nav-ul-li-a {
   text-decoration: none;
   color: inherit;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* INDEX FOOTER */
@@ -243,3 +290,82 @@ body {
   align-items: center;
   box-sizing: border-box;
 }
+
+.index-footer-div1-span{
+
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-footer-div1-span1{
+  width: 40%;
+}
+
+#index-footer-div1-span2{
+  text-decoration: none;
+}
+
+#index-footer-div1-span1-a1{
+  text-decoration: none;
+  margin-left: 2%;
+  background-color: white;
+  color: white;
+  width: auto;
+  width: auto;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-color: white;
+  position: relative;
+}
+#index-footer-div1-span1-a1::before{
+  content: "click me";
+  color: black;
+  position: absolute;         
+  top: 50%;              /* Position middle vertically */
+  left: 50%;             /* Position middle horizontally */
+  transform: translate(-50%, -50%);
+}
+#index-footer-div1-span1-a1:hover::before {
+  content: ""; 
+}
+#index-footer-div1-span1-a1:hover{
+  background-color: black;
+}
+
+#index-footer-div1-span3-a1{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+#index-footer-div1-span3-a1:hover{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+#index-footer-div1-span3-a1-img1{
+
+  height: 20px;
+  width: 20px;
+  margin-right: 2%;
+}
+
+
+
+
+
+
+
+
+
+

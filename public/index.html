@@ -12,7 +12,8 @@
 
     <meta name="author" content="https://abbeyroad.org.uk/" />
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+    frame-src https://www.google.com/maps/" />
 
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
@@ -89,12 +90,6 @@
   </head>
 
   <body>
-    <div id="msg">
-      <div id="x">X</div>
-      This Website is currently under development. Website to be completed by
-      05/08/2025. This is just the prototype version and is meant to be viewed
-      only. Features will not work until 05/08/2025
-    </div>
 
     <!-- index header main nav -->
     <header id="index-header">
@@ -113,11 +108,13 @@
               href="tel:+44207 6246309"
               class="index-header-nav1-ul1-li1-a"
             >
-              <p id="index-header-nav1-ul1-li1-p">0207 624 6309</p>
+              0207 624 6309
             </a>
           </li>
 
-          <li class="index-header-nav1-ul1-li1">
+          <li 
+          class="index-header-nav1-ul1-li1"
+          id="index-header-nav1-ul1-li1">
             <img
               class="index-header-nav1-ul1-li1-img"
               src="../src/assets/icons/home-17px.png"
@@ -127,11 +124,13 @@
               id="index-header-nav1-ul1-li1-p1"
               data-element-number="0001"
             >
-              Abbey Road Community Housing Ltd, Unit 1, London, NW6 4BX.
+              Abbey Road Community Housing Ltd, Unit 1, 145-149 Belsize Road, London, NW6 4BX
             </p>
           </li>
 
-          <li class="index-header-nav1-ul1-li1">
+          <li 
+          class="index-header-nav1-ul1-li1"
+          id="index-header-nav1-ul1-li2">
             <img
               class="index-header-nav1-ul1-li1-img"
               src="../src/assets/icons/email-17px.png"
@@ -147,7 +146,11 @@
         </ul>
 
         <ul id="index-header-nav1-ul2">
-          <li class="index-header-nav1-ul1-li2">Share Us on Media:</li>
+          <li class="index-header-nav1-ul1-li2">
+          	<p id="index-header-nav1-ul1-li2-p1">
+          		Share Us on Media:
+          	</p>
+          </li>
 
           <li class="index-header-nav1-ul1-li2">
             <a
@@ -223,7 +226,9 @@
 
       <!-- index header main navbar 2 -->
       <div id="index-header-div1">
-        <a href="#index-main" id="index-header-div1-a1">
+        <a 
+        href="#index-main"
+        id="index-header-div1-a1">
           <img
             src="../src/assets/images/logo/logo.png"
             id="index-header-div1-a1-img"
@@ -236,59 +241,61 @@
               class="index-header-div1-nav-ul-li"
               id="index-header-div1-nav-ul-li"
             >
-              <a href="#index-main" class="index-header-div1-nav-ul-li-a">
-                <p
-                  class="index-header-div1-nav-ul-li-a-p"
-                  contenteditable="true"
-                  data-element-number="0002"
-                  title="Link name | element_number:0002"
-                >
+              <a href="#index-main" 
+              class="index-header-div1-nav-ul-li-a">
                   Home
-                </p>
               </a>
             </li>
 
             <li class="index-header-div1-nav-ul-li">
-              <a href="./about-us.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">About us</p>
+              <a href="./about-us.html" 
+              class="index-header-div1-nav-ul-li-a">
+                About us
               </a>
             </li>
 
             <li class="index-header-div1-nav-ul-li">
-              <a href="./news.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">News</p>
+              <a href="./news.html" 
+              class="index-header-div1-nav-ul-li-a">
+                News
               </a>
             </li>
 
             <li class="index-header-div1-nav-ul-li">
-              <a href="./events.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">Events</p>
+              <a href="./events.html" 
+              class="index-header-div1-nav-ul-li-a">
+                Events
               </a>
             </li>
             <li class="index-header-div1-nav-ul-li">
-              <a href="./services.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">Services</p>
-              </a>
-            </li>
-
-            <li class="index-header-div1-nav-ul-li">
-              <a href="./governance.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">Governance</p>
+              <a href="./services.html" 
+              class="index-header-div1-nav-ul-li-a">
+                Services
               </a>
             </li>
 
             <li class="index-header-div1-nav-ul-li">
+              <a href="./governance.html" 
+              class="index-header-div1-nav-ul-li-a">
+                Governance
+              </a>
+            </li>
+
+            <li 
+            id="index-header-div1-nav-ul-li-resident"
+            class="index-header-div1-nav-ul-li">
               <a
-                href="./regeneration.html"
+                href="./resident-involvement.html"
                 class="index-header-div1-nav-ul-li-a"
               >
-                <p class="index-header-div1-nav-ul-li-a-p">Regeneration</p>
+               Resident Involvement
               </a>
             </li>
 
             <li class="index-header-div1-nav-ul-li">
-              <a href="./contact.html" class="index-header-div1-nav-ul-li-a">
-                <p class="index-header-div1-nav-ul-li-a-p">Contact Us</p>
+              <a href="./contact.html" 
+              class="index-header-div1-nav-ul-li-a">
+                Contact Us
               </a>
             </li>
           </ul>
@@ -303,7 +310,7 @@
         <!-- index main content articl1 navbar1-->
         <div id="index-main-article1-div1">
           <span
-            class="index-main-article1-div1-span"
+            class="index-main-article1-div1-span index-main-article1-div1-span-selected"
             id="index-main-article1-div1-span1"
           >
             <h2
@@ -316,7 +323,7 @@
           </span>
 
           <span
-            class="index-main-article1-div1-span index-main-article1-div1-span-selected"
+            class="index-main-article1-div1-span"
             id="index-main-article1-div1-span2"
           >
             <h2
@@ -380,7 +387,9 @@
           >
             <p>AGM 2018/2019</p>
           </a>
-          <a class="index-main-article1-div2-a1" href="#" target="_blank">
+          <a 
+          class="index-main-article1-div2-a1"
+          href="./about-us.html">
             <p>Read More</p>
           </a>
         </div>
@@ -389,7 +398,6 @@
         <div id="index-main-article1-div3">
           <h3
             class="index-main-article1-div3-h3"
-            contenteditable="true"
             data-element-number="0016"
             title="What does the Management Committee do Description | element_number:0016"
           >
@@ -398,6 +406,7 @@
             month to ensure that staff run the Estate properly on a day-to-day
             basis and to make policies in line with the Management Agreement.
             Management Committee members are responsible for:
+          </h3>
             <ul id="index-main-article1-div3-h3-ul">
               <li class="index-main-article1-div3-h3-ul-li">
                 <p class="index-main-article1-div3-h3-ul-li-p">
@@ -436,6 +445,11 @@
                 </p>
               </li>
             </ul>
+           <h3
+            class="index-main-article1-div3-h3"
+            data-element-number="0016"
+            title="What does the Management Committee do Description | element_number:0016"
+          >
             You can ask to attend a Management Committee meeting or write to the
             Management Committee at any time.
           </h3>
@@ -443,19 +457,32 @@
 
         <!-- index main content article location & images -->
         <div id="index-main-article1-div4">
-          <!-- 	 			<div id="index-main-article1-div4-div1">
-	 				<iframe src="#">
-	 					
-	 				</iframe>
-	 				<iframe src="#">
-	 					
-	 				</iframe>
-	 			</div>
-	 			<div>
-	 				<img src="#">
-	 			</div> -->
-
-          Soon to be updated
+          <div id="index-main-article1-div4-div1">
+						<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.575097090651!2d-0.19078222375261616!3d51.539352771820596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487610758f189383%3A0x8038ae11de6b1435!2sHousing%20Co-Op!5e0!3m2!1sen!2suk!4v1754762387319!5m2!1sen!2suk"   
+						loading="lazy"
+						class="index-main-article1-div4-div1-iframe">
+						</iframe>
+						<iframe 
+						src="https://www.google.com/maps/embed?pb=!4v1754763043454!6m8!1m7!1s--r9LbV3__rxuH-uvHxGpA!2m2!1d51.53944214201971!2d-0.1883162710527376!3f142.65413!4f0!5f0.7820865974627469"  
+						loading="lazy"
+						class="index-main-article1-div4-div1-iframe">
+						</iframe>
+					</div>
+					<div id="index-main-article1-div4-div2">
+							<a 
+							class="index-main-article1-div4-div2-a"
+							href="https://maps.app.goo.gl/ZktUamYNQu25etUx5"
+							target="_blank">
+								Google Maps Location
+							</a>
+							<a 
+							class="index-main-article1-div4-div2-a"
+							href="https://maps.app.goo.gl/aNr3MiLPywxD3wWf6"
+							target="_blank">
+								Google Street View
+							</a>
+		 			</div>
         </div>
 
         <!-- index main content article footer-->
@@ -475,29 +502,29 @@
         </div>
       </article>
 
-      <!-- index main content article2 -->
+      <!-- index main content article2 (section1) -->
       <section id="index-main-section1">
-        <!-- index main content article2 navbar -->
+        <!-- index main content article2 (section1) navbar -->
         <nav id="index-main-section1-nav1">
           <span
             class="index-main-section1-nav1-span1 index-main-section1-nav1-span1-selected"
             id="index-main-section1-nav1-span1"
           >
-            <p>Latest News</p>
+            Latest News
           </span>
 
           <span
-            class="index-main-section1-nav1-span1 index-main-section1-nav1-span1-selected"
+            class="index-main-section1-nav1-span1"
             id="index-main-section1-nav1-span2"
           >
-            <p>Upcoming Events</p>
+           Upcoming Events
           </span>
 
           <span
             class="index-main-section1-nav1-span1"
             id="index-main-section1-nav1-span3"
           >
-            <p>Keep Updated</p>
+           Keep Updated
           </span>
         </nav>
 
@@ -520,7 +547,9 @@
             </div>
             <div class="index-main-section1-div1-div1-div2">
               <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <a 
+              class="index-main-section1-div1-div1-div2-a"
+              href="./news">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -545,7 +574,9 @@
             </div>
             <div class="index-main-section1-div1-div1-div2">
               <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <a 
+              class="index-main-section1-div1-div1-div2-a" 
+              href="./news">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -570,7 +601,9 @@
             </div>
             <div class="index-main-section1-div1-div1-div2">
               <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <a 
+              class="index-main-section1-div1-div1-div2-a" 
+              href="./news">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -579,19 +612,22 @@
           </div>
 
           <div class="index-main-section1-div1-div2">
-            <a href="#" class="index-main-section1-div1-div2-a">
-              <p class="index-main-section1-div1-div2-a-p">
+            <a 
+            href="./news.html" 
+            class="index-main-section1-div1-div2-a">
                 Click here for More News
-              </p>
             </a>
           </div>
         </div>
 
-        <!-- Upcoming news	 -->
+        <!-- Upcoming Events	 -->
         <div id="index-main-section1-div2">
           <div class="index-main-section1-div1-div1">
             <div class="index-main-section1-div1-div1-div1">
               <h4 class="index-main-section1-div1-div1-div1-h4">
+              	<span class="index-main-section1-div1-div1-div1-h4-span">
+                  Event title
+                </span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -602,8 +638,12 @@
               </h4>
             </div>
             <div class="index-main-section1-div1-div1-div2">
-              <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <h5 class="index-main-section1-div1-div1-div2-h5">
+              	date
+              </h5>
+              <a 
+              class="index-main-section1-div1-div1-div2-a" 
+              href="./events">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -613,6 +653,9 @@
           <div class="index-main-section1-div1-div1">
             <div class="index-main-section1-div1-div1-div1">
               <h4 class="index-main-section1-div1-div1-div1-h4">
+              	<span class="index-main-section1-div1-div1-div1-h4-span">
+                  Event title
+                </span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -623,8 +666,12 @@
               </h4>
             </div>
             <div class="index-main-section1-div1-div1-div2">
-              <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <h5 class="index-main-section1-div1-div1-div2-h5">
+              	date
+              </h5>
+              <a 
+              class="index-main-section1-div1-div1-div2-a" 
+              href="./events">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -634,6 +681,9 @@
           <div class="index-main-section1-div1-div1">
             <div class="index-main-section1-div1-div1-div1">
               <h4 class="index-main-section1-div1-div1-div1-h4">
+              	<span class="index-main-section1-div1-div1-div1-h4-span">
+                  Event title
+                </span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -644,8 +694,11 @@
               </h4>
             </div>
             <div class="index-main-section1-div1-div1-div2">
-              <h5 class="index-main-section1-div1-div1-div2-h5">date</h5>
-              <a class="index-main-section1-div1-div1-div2-a" href="#">
+              <h5 class="index-main-section1-div1-div1-div2-h5">
+              	date
+              </h5>
+              <a class="index-main-section1-div1-div1-div2-a"
+              href="./events">
                 <p class="index-main-section1-div1-div1-div2-a-p">
                   Click here for more Information
                 </p>
@@ -653,13 +706,14 @@
             </div>
           </div>
           <div class="index-main-section1-div1-div2">
-            <a href="#" class="index-main-section1-div1-div2-a">
-              <p class="index-main-section1-div1-div2-a-p">
+            <a 
+            href="./events.html" 
+            class="index-main-section1-div1-div2-a">
                 Click here for More Events
-              </p>
             </a>
           </div>
         </div>
+
         <!-- Keep Updated -->
         <div id="index-main-section1-div3">
           <h4 id="index-main-section1-div3-h4">
@@ -681,7 +735,9 @@
           </span>
           <span id="index-main-section1-div3-span2">
             <div id="index-main-section1-div3-span2-div1"></div>
-            <h5 id="index-main-section1-div3-span2-h5">email message</h5>
+            <h5 
+            id="index-main-section1-div3-span2-h5"
+            class="index-main-section1-div3-span2-h5"></h5>
           </span>
         </div>
       </section>
@@ -742,13 +798,18 @@
               </p>
             </li>
           </ul>
-          <a href="#" id="index-section1-article1-a1">
-            <p id="index-section1-article1-a1-p">Click here to find out more</p>
+          <a 
+          href="./services.html" 
+          id="index-section1-article1-a1">
+            Click here to find out more
           </a>
         </article>
+
         <section id="index-section1-section1">
           <div class="index-section1-section1-div">
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/r&m.jpg"
@@ -757,7 +818,9 @@
                 Repairs and Maintenance
               </p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/movp.jpg"
@@ -766,7 +829,9 @@
                 Management of Void Properties
               </p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/caec.jpg"
@@ -775,7 +840,9 @@
                 Caretaking and Estate Cleaning
               </p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/tem.jpg"
@@ -786,28 +853,36 @@
             </a>
           </div>
           <div class="index-section1-section1-div">
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/lettings.jpg"
               />
               <p class="index-section1-section1-div-a-p">Lettings</p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/ha.jpg"
               />
               <p class="index-section1-section1-div-a-p">Housing Advice</p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/governance.jpg"
               />
               <p class="index-section1-section1-div-a-p">Governance</p>
             </a>
-            <a class="index-section1-section1-div-a">
+            <a 
+            class="index-section1-section1-div-a"
+            href="./services.html">
               <img
                 class="index-section1-section1-div-a-img"
                 src="../src/assets/images/services-images/rs.jpg"
@@ -819,13 +894,22 @@
           </div>
         </section>
       </div>
+
+      <div id="index-section1-div3">
+      	<a 
+      	href="./services.html"
+      	id="index-section1-div3-a1">
+      		Click here to find out more 
+      	</a>
+      	
+      </div>
     </section>
 
     <section id="index-section2" role="complementary">
       <div id="index-section2-div1">
-        <a href="#" id="index-section2-div1-a1">
-          <h2 id="index-section2-div1-h2">Resident Participation</h2>
-        </a>
+          <h2 id="index-section2-div1-h2">
+          Resident Participation
+        </h2>
       </div>
       <div id="index-section2-div2">
         <section id="index-section2-div2-section1">
@@ -881,28 +965,56 @@
             see on the estate. Its aim is to improve the standard of service
             being provided.
           </p>
-          <a href="#" id="index-section2-div2-article1-a1">
-            <p id="index-section2-div2-article1-a1-p">
+          <a href="#" 
+          id="index-section2-div2-article1-a1">
               Click here to find Out More
-            </p>
           </a>
         </article>
       </div>
+      <div id="index-section2-div3">
+    	  <a href="./resident-involvement.html" 
+        id="index-section2-div3-a1">
+            Click here to find Out More
+        </a>
+      </div>
     </section>
 
+    <!-- index-footer -->
     <footer id="index-footer">
-      <span id="index-footer-div1-span1" class="index-footer-div1-span">
+
+      <span 
+      id="index-footer-div1-span1" 
+      class="index-footer-div1-span">
         <p id="index-footer-div1-span1-p1">
           | Abbey Road Community Housing Ltd © 2024 | All Rights Reserved |
         </p>
       </span>
-      <span id="index-footer-div1-span2" class="index-footer-div1-span">
+
+      <span 
+      id="index-footer-div1-span2" 
+      class="index-footer-div1-span">
         <p id="index-footer-div1-span1-p2">
-          website built by: benowusu@hotmail.co.uk
+          website built by:
         </p>
+        <a 
+        href="mailto:benowusu@hotmail.co.uk?subject=Website%20Enquiries"
+        id="index-footer-div1-span1-a1">
+        	benowusu@hotmail.co.uk
+        </a>
       </span>
-      <span id="index-footer-div1-span1" class="index-footer-div1-span">
-        <a href="#"> admin </a>
+
+      <span 
+      id="index-footer-div1-span3" 
+      class="index-footer-div1-span">
+        <a 
+        href="./login.html"
+        id="index-footer-div1-span3-a1"
+        > 
+        	<img 
+        	src="../src/assets/icons/admin-17px.png"
+        	id="index-footer-div1-span3-a1-img1">
+        		admin 
+        </a>
       </span>
     </footer>
 
