@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel serve ./public/index.html -p 8080 --open",
-    "build": "rm -r docs && parcel build ./public/index.html --dist-dir docs --public-url ./abbey-road",
+    "build": "rm -r docs && parcel build ./public/index.html --dist-dir docs --public-url ./",
     "pretty": "npx prettier --config ./utilities/prettier/.prettierrc --ignore-path ./utilities/prettier/.prettierignore --write ./",
     "prepare": "husky install"
   },
