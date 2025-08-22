@@ -1,0 +1,88 @@
+/* login-main */
+
+#login-main{
+	background-color: var(--third-color);
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#login-main-img1{
+
+	height: 200px;
+	width: 300px;
+	border: solid white 2px;
+	border-radius: 15px;
+	margin-top: 3%;
+
+}
+
+#login-main-form{
+	color: var(--fourth-color);
+	width: 70%;
+	margin-bottom: 0px;
+		margin-top: 3%;
+
+}
+#login-main-form fieldset {
+		border: none;
+}
+
+#login-password{
+	background-color: var(--third-color);
+	border: var(--fourth-color) 2px solid;
+	outline: none;
+	color: white;
+	width: 60%;
+	height: 30px;
+	margin-top: 2%;
+	font-size: 110%;
+	box-sizing: border-box;
+	padding: 1%;
+}
+#login-password:focus{
+	background-color: black;
+}
+
+#login-password-submit{
+	background-color: var(--third-color);
+	border: solid 2px var(--fourth-color);
+	color: var(--fourth-color);
+	cursor: pointer;
+	padding: 1%;
+}
+#login-password-submit:hover{
+	background-color: var(--fourth-color);
+	color: var(--third-color);
+}
+
+#login-password-reset{
+	background-color: var(--third-color);
+	border: solid 2px var(--fourth-color);
+	color: var(--fourth-color);
+	cursor: pointer;
+	padding: 1%;
+}
+#login-password-reset:hover{
+	background-color: var(--fourth-color);
+	color: var(--third-color);
+}
+
+#login-main-p1{
+	border: solid red 2px;
+	width: auto;
+	height: auto;
+	padding: 1%;
+	background-color: var(--fourth-color);
+	color: darkred;
+	margin-top: 1%;
+	display: flex;
+	justify-content: center;
+	display: none;
+}
+
+
+
