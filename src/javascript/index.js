@@ -29,7 +29,7 @@ const startApp = () =>{
 	else if (
 		window.location.pathname === "/events" ||
 		window.location.pathname === "/events.html" ||
-		window.location.pathname === "abbey-road/events.html"
+		window.location.pathname === "/abbey-road/events.html"
 		){
 		import("./events-page/controller/controller.js")
 		.then((res)=>{
