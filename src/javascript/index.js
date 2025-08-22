@@ -15,7 +15,8 @@ const startApp = () =>{
 	}
 	else if (
 		window.location.pathname === "/news" ||
-		window.location.pathname === "/news.html"
+		window.location.pathname === "/news.html" ||
+		window.location.pathname === "/abbey-road/news.html" 
 		){
 		import("./news-page/controller/controller.js")
 		.then((res)=>{
@@ -42,7 +43,8 @@ const startApp = () =>{
 	}
 	else if (
 		window.location.pathname === "/contact" ||
-		window.location.pathname === "/contact.html"
+		window.location.pathname === "/contact.html" ||
+		window.location.pathname === "/abbey-road/contact.html" 
 		){
 		import("./contact-us-page/controller/controller.js")
 		.then((res)=>{
@@ -55,7 +57,8 @@ const startApp = () =>{
 	}
 	else if (
 		window.location.pathname === "/resident-involvement" ||
-		window.location.pathname === "/resident-involvement.html"
+		window.location.pathname === "/resident-involvement.html" ||
+		window.location.pathname === "/abbey-road/resident-involvement.html" 
 		){
 		import("./resident-involvement/controller/controller.js")
 		.then((res)=>{
