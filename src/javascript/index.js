@@ -2,8 +2,8 @@
 
 const startApp = () =>{
 
-
-	if(window.location.pathname === "/"){
+	if(window.location.pathname === "/" ||
+		window.location.pathname === "/abbey-road/" ){
 		import("./index-page/controller/controller.js")
 		.then((res)=>{
 			new res.IndexController()
